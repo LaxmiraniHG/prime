@@ -31,8 +31,25 @@ long long powerOfXtoX(int x) {
 
 int main() {
     int n, x;
+    printf("Enter the number of terms for Fibonacci series: ");
+    scanf("%d", &n);
+    printFibonacci(n);
+    
+    printf("Enter a number to check if it's prime: ");
+    scanf("%d", &n);
+    if (isPrime(n)) {
+        printf("%d is a prime number.\n", n);
+    } else {
+        printf("%d is not a prime number.\n", n);
+    }
 
+    printf("Enter a number to calculate x^x: ");
+    scanf("%d", &x);
+    printf("%d^%d = %lld\n", x, x, powerOfXtoX(x));
 
-return 0;
+    return 0;
 }
+
+
+
 
